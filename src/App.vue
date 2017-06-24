@@ -1,19 +1,26 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+    <div id="app">
+        <div>
+            <input-form></input-form>
+        </div>
+        <div>
+            <todo-list></todo-list>
+        </div>
+
+    </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+  import InputForm from './components/InputForm'
+  import TodoList from './components/TodoList'
 
-export default {
-  name: 'app',
-  components: {
-    Hello
+  export default {
+    name: 'app',
+    components: {
+      InputForm,
+      TodoList
+    }
   }
-}
 </script>
 
 <style>
